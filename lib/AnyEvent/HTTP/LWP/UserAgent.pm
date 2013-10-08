@@ -81,9 +81,9 @@ you can control it in C<AnyEvent::HTTP::LWP::UserAgent> using C<conn_cache> meth
 
 If you set C<conn_cache> (as C<LWP::ConnCache> object) then
 C<Anyevent::HTTP::LWP::UserAgent> makes two things. In first it sets global variable
-C<$AnyEvent::HTTP::ACTIVE> as you setted C<total_capacity> for C<conn_cache> (be careful:
+C<$AnyEvent::HTTP::ACTIVE> as you set C<total_capacity> for C<conn_cache> (be careful:
 this have a global consequences, not local). And in the second C<AnyEvent::HTTP::LWP::UserAgent>
-will create persistent connections if your C<$ua> have C<conn_cache> (local propery of C<$ua>).
+will create persistent connections if your C<$ua> have C<conn_cache> (local property of C<$ua>).
 
 But you can't use remainder methods of your C<conn_cache>, all connections will
 contains in C<AnyEvent::HTTP>. C<$AnyEvent::HTTP::ACTIVE> sets only when you set
